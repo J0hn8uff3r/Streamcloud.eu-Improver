@@ -7,6 +7,8 @@
 // @include     http://*streamcloud.eu/*
 // @released	07/09/2016
 // @version     1.0
+// @downloadURL https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
+// @updateURL   https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @grant       none
 // ==/UserScript==
 
