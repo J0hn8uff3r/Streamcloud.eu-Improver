@@ -9,7 +9,6 @@
 // @version     1.0
 // @grant       none
 // ==/UserScript==
-// https://developer.jwplayer.com/jw-player/docs/developer-guide/api/javascript_api_reference/#volume
 
 /*TODO
 Bypass wait time
