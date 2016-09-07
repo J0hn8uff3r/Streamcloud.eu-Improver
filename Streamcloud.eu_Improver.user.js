@@ -1,8 +1,11 @@
 // ==UserScript==
 // @name        Streamcloud.eu Improver
-// @namespace   Streamcloud.eu Improver
-// @description Large amount of improvements for streamcloud.eu
+// @author		J0hn8uff3r
+// @namespace   https://github.com/J0hn8uff3r
+// @license		GNU General Public License v3.0
+// @description Large amount of improvements for Streamcloud.eu
 // @include     http://*streamcloud.eu/*
+// @released	07/09/2016
 // @version     1.0
 // @grant       none
 // ==/UserScript==
