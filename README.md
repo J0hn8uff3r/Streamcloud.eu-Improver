@@ -27,7 +27,7 @@ https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_
 
 6-Control volume gain %
 
-7-Choose your desired default volume %
+7-Choose your desired default start volume % 
 
 8-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second
 
