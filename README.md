@@ -12,27 +12,29 @@ https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_
 
 ---Improvements---
 
-1-Play/Stop video using spacebar even if you clicked outside the video frame
+A-Play/Stop video using spacebar even if you clicked outside the video frame
 
-2-Avoid default scroll down default action when spacebar is pressed
+B-Avoid default scroll down default action when spacebar is pressed
 
-3-Clean unnecessary elements
+C-Clean unnecessary elements
 
-4-Control volume using mouse wheel
+D-Control volume using mouse wheel
 
-5-Hide mouse cursor on idle even if you'r not using fullscreen option
+E-Hide mouse cursor on idle even if you'r not using fullscreen option
+
+F-Set video controlbar below videoplayer
 
 
 ************Options************
 
-6-Control volume gain %
+1-Control volume gain %
 
-7-Choose your desired default start volume % 
+2-Choose your desired default start volume %
 
-8-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second
+3-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second
 
-9-Choose desired lights level, within a range from 0 to 1 increasing 0.1
+4-Choose desired lights level, within a range from 0 to 1 increasing 0.1
 
-10-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
+5-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
 
 ************Options************
