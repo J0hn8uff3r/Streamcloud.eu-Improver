@@ -1,4 +1,4 @@
-![alt tag](http://samy.pl/magspoof/meter-small2.gif)
+![alt tag](url)
 
 # Streamcloud.eu-Improver
 Large amount of improvements for video host http://streamcloud.eu/
