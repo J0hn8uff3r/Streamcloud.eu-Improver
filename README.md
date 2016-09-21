@@ -1,3 +1,5 @@
+http://samy.pl/magspoof/meter-small2.gif
+
 # Streamcloud.eu-Improver
 Large amount of improvements for video host http://streamcloud.eu/
 
