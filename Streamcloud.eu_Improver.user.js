@@ -41,10 +41,11 @@ var lights_level = 0; //Option 4
 var video_size = 0; //Option 5
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor); //Check web browser
 
-setInterval(function() { //Move controlbar below videoplayer
-    document.getElementById("mediaplayer_controlbar").style.bottom = "-30px";
-    document.getElementById("mediaplayer_controlbar").style.display = "inline-block";
-}, 1);
+//Disabled until proper fix
+//setInterval(function() { //Move controlbar below videoplayer
+//    document.getElementById("mediaplayer_controlbar").style.bottom = "-30px";
+//    document.getElementById("mediaplayer_controlbar").style.display = "inline-block";
+//}, 1);
 
 function volControl(control) {
     if (control == "up") {
