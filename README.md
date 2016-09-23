@@ -1,5 +1,5 @@
 
-![alt tag](http://gifyu.com/images/streamcloud.gif)
+![alt tag](http://im.ezgif.com/tmp/28ae7204a0.gif)
 
 # Streamcloud.eu-Improver
 Large amount of improvements for video host http://streamcloud.eu/
