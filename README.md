@@ -38,5 +38,6 @@ F-Set video controlbar below videoplayer
 5-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
 
 ************Options************
+
 ![alt tag](http://s14.postimg.org/qacpygug1/Captura.png)
 ![alt tag](http://s21.postimg.org/3qmd4jyiv/Captura2.png)
