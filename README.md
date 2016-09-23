@@ -22,7 +22,7 @@ D-Control volume using mouse wheel
 
 E-Hide mouse cursor on idle even if you'r not using fullscreen option
 
-F-Set video controlbar below videoplayer
+F-Set video controlbar below videoplayer (Feature disabled until proper fix)
 
 
 ************Options************
