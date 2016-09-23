@@ -1,4 +1,4 @@
-![alt tag](http://s14.postimg.org/qacpygug1/Captura.png)![alt tag](http://s14.postimg.org/c9k5xpp29/Captura2.png)
+![alt tag](http://s14.postimg.org/qacpygug1/Captura.png)![alt tag](http://s21.postimg.org/3qmd4jyiv/Captura2.png)
 
 
 # Streamcloud.eu-Improver
