@@ -1,5 +1,5 @@
-
-![alt tag](http://im.ezgif.com/tmp/28ae7204a0.gif)
+![Alt text](http://s14.postimg.org/qacpygug1/Captura.png "Optional title")
+![alt tag](http://s14.postimg.org/qacpygug1/Captura.png)
 
 # Streamcloud.eu-Improver
 Large amount of improvements for video host http://streamcloud.eu/
