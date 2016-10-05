@@ -143,7 +143,7 @@ window.onkeydown = function(e) {
     }
 };
 
-if (isChrome == true) { //It's Chrome
+if (isChrome) { //It's Chrome
     $('body').on('mousewheel', function(e) {
         if (e.originalEvent.wheelDelta == 120) { // Vol Up
             volControl("up");
