@@ -147,7 +147,7 @@ if (video_size == 1) jwplayer().setFullscreen(true);
 document.getElementById("the_lights").style.height = window.innerHeight - 20 + "px";
 document.getElementById("the_lights").style.display = "block";
 document.getElementById("the_lights").style.opacity = lights_level;
-document.getElementById("vmenubar").remove();
+//document.getElementById("vmenubar").remove();
 
 
 jwplayer().setVolume(volume);
