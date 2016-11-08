@@ -45,10 +45,10 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
 //    document.getElementById("mediaplayer_controlbar").style.display = "inline-block";
 //}, 1);
 
-(function () {
-var scriptElement = document.createElement('script');
-scriptElement.innerHTML = 'function skipSet() {var start_minute = parseInt(document.getElementById("minutes").value);var start_second = parseInt(document.getElementById("seconds").value);document.cookie = "start_minute="+start_minute+"; path=/";document.cookie = "start_second="+start_second+"; path=/";start_minute = start_minute * 60;jwplayer().seek((start_minute + start_second));}';
-document.body.appendChild( scriptElement );
+(function() {
+    var scriptElement = document.createElement('script');
+    scriptElement.innerHTML = 'function skipSet() {var start_minute = parseInt(document.getElementById("minutes").value);var start_second = parseInt(document.getElementById("seconds").value);document.cookie = "start_minute="+start_minute+"; path=/";document.cookie = "start_second="+start_second+"; path=/";start_minute = start_minute * 60;jwplayer().seek((start_minute + start_second));}';
+    document.body.appendChild(scriptElement);
 })();
 
 function readCookie(name) {
@@ -124,19 +124,19 @@ document.getElementById("footer").remove();
 
 setTimeout(function() {
     var start_minute = parseInt(readCookie("start_minute"));
-	var start_second = parseInt(readCookie("start_second"));
-	
-	if (isNaN(start_minute) && isNaN(start_second)){
-		document.getElementById("minutes").value=0;
-		document.getElementById("seconds").value=0;
-	} else {
-		document.getElementById("minutes").value=start_minute;
-		document.getElementById("seconds").value=start_second;
-	}
-	
-	start_minute = start_minute * 60;
-	jwplayer().seek((start_minute + start_second));
-	document.getElementById("mediaplayer_display_button").remove();
+    var start_second = parseInt(readCookie("start_second"));
+
+    if (isNaN(start_minute) && isNaN(start_second)) {
+        document.getElementById("minutes").value = 0;
+        document.getElementById("seconds").value = 0;
+    } else {
+        document.getElementById("minutes").value = start_minute;
+        document.getElementById("seconds").value = start_second;
+    }
+
+    start_minute = start_minute * 60;
+    jwplayer().seek((start_minute + start_second));
+    document.getElementById("mediaplayer_display_button").remove();
 }, 1000);
 
 document.getElementById("vmenubar").innerHTML = "<table align='center' style='margin: 0px auto;'><tr><td>Init Mins</td><td>Init Secs</td></tr><tr><td><input id='minutes' type='number' value='0' min='0' max='9999' onKeyUp='if(this.value>9999){this.value=9999;}else if(this.value<0){this.value=0;}else {skipSet();}'></td><td><input id='seconds' type='number' value='0' min='0' max='59' onKeyUp='if(this.value>59){this.value=59;}else if(this.value<0){this.value=0;}else {skipSet();}'></td></tr></table>";
