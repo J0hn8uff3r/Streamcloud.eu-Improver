@@ -31,7 +31,7 @@ F-Set video controlbar below videoplayer (Feature disabled until proper fix)
 
 2-Choose your desired default start volume %
 
-3-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second
+3-Skip video to desired position at start, so you can skip boring tv shows intros, setting start minute and start second (Editable from site on version 1.2.0)
 
 4-Choose desired lights level, within a range from 0 to 1 increasing 0.1
 
