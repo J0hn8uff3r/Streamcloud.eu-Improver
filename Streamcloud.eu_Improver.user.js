@@ -6,7 +6,7 @@
 // @description Large amount of improvements for Streamcloud.eu
 // @include     http://*streamcloud.eu/*
 // @released	08/11/2016
-// @version     1.2.0
+// @version     1.2.1
 // @downloadURL https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @updateURL   https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @grant       none
@@ -139,7 +139,7 @@ setTimeout(function() {
     document.getElementById("mediaplayer_display_button").remove();
 }, 1000);
 
-document.getElementById("vmenubar").innerHTML = "<table align='center' style='margin: 0px auto;'><tr><td>Init Mins</td><td>Init Secs</td></tr><tr><td><input id='minutes' type='number' value='0' min='0' max='9999' onKeyUp='if(this.value>9999){this.value=9999;}else if(this.value<0){this.value=0;}else {skipSet();}'></td><td><input id='seconds' type='number' value='0' min='0' max='59' onKeyUp='if(this.value>59){this.value=59;}else if(this.value<0){this.value=0;}else {skipSet();}'></td></tr></table>";
+document.getElementById("vmenubar").innerHTML = "<table align='center' style='margin: 0px auto;'><tr><td>Init Mins</td><td>Init Secs</td></tr><tr><td><input id='minutes' type='number' value='0' min='0' max='9999' onchange='if(this.value>9999){this.value=9999;}else if(this.value<0){this.value=0;}else {skipSet();}'></td><td><input id='seconds' type='number' value='0' min='0' max='59' onchange='if(this.value>59){this.value=59;}else if(this.value<0){this.value=0;}else {skipSet();}'></td></tr></table>";
 
 if (video_size == 1) jwplayer().setFullscreen(true);
 
