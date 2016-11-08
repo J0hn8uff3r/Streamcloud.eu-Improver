@@ -5,8 +5,8 @@
 // @license		GNU General Public License v3.0
 // @description Large amount of improvements for Streamcloud.eu
 // @include     http://*streamcloud.eu/*
-// @released	07/09/2016
-// @version     1.1.0
+// @released	08/11/2016
+// @version     1.2.0
 // @downloadURL https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @updateURL   https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @grant       none
@@ -28,15 +28,13 @@ F-Set video controlbar below videoplayer
 ************Options************
 1-Control volume gain %
 2-Choose your desired default start volume % 
-3-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second
+3-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second (Editable from site on version 1.2.0)
 4-Choose desired lights level, within a range from 0 to 1 increasing 0.1
 5-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
 ************Options************
 */
 var vol_gain = 10; //Option 1
 var volume = 20; //Option 2
-var start_minute = 0; //Option 3
-var start_second = 0; //Option 3
 var lights_level = 0; //Option 4
 var video_size = 0; //Option 5
 var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor); //Check web browser
@@ -46,6 +44,23 @@ var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator
 //    document.getElementById("mediaplayer_controlbar").style.bottom = "-30px";
 //    document.getElementById("mediaplayer_controlbar").style.display = "inline-block";
 //}, 1);
+
+(function () {
+var scriptElement = document.createElement('script');
+scriptElement.innerHTML = 'function skipSet() {var start_minute = parseInt(document.getElementById("minutes").value);var start_second = parseInt(document.getElementById("seconds").value);document.cookie = "start_minute="+start_minute+"; path=/";document.cookie = "start_second="+start_second+"; path=/";start_minute = start_minute * 60;jwplayer().seek((start_minute + start_second));}';
+document.body.appendChild( scriptElement );
+})();
+
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+    }
+    return null;
+}
 
 function volControl(control) {
     if (control == "up") {
@@ -108,14 +123,23 @@ document.getElementById("header").remove();
 document.getElementById("footer").remove();
 
 setTimeout(function() {
-    if (start_minute > 0 || start_second > 0) {
-        start_minute = start_minute * 60;
-        jwplayer().seek((start_minute + start_second));
-    } else {
-        document.getElementById("mediaplayer_display_button").remove();
-        jwplayer().play();
-    }
+    var start_minute = parseInt(readCookie("start_minute"));
+	var start_second = parseInt(readCookie("start_second"));
+	
+	if (isNaN(start_minute) && isNaN(start_second)){
+		document.getElementById("minutes").value=0;
+		document.getElementById("seconds").value=0;
+	} else {
+		document.getElementById("minutes").value=start_minute;
+		document.getElementById("seconds").value=start_second;
+	}
+	
+	start_minute = start_minute * 60;
+	jwplayer().seek((start_minute + start_second));
+	document.getElementById("mediaplayer_display_button").remove();
 }, 1000);
+
+document.getElementById("vmenubar").innerHTML = "<table align='center' style='margin: 0px auto;'><tr><td>Init Mins</td><td>Init Secs</td></tr><tr><td><input id='minutes' type='number' value='0' min='0' max='9999' onKeyUp='if(this.value>9999){this.value=9999;}else if(this.value<0){this.value=0;}else {skipSet();}'></td><td><input id='seconds' type='number' value='0' min='0' max='59' onKeyUp='if(this.value>59){this.value=59;}else if(this.value<0){this.value=0;}else {skipSet();}'></td></tr></table>";
 
 if (video_size == 1) jwplayer().setFullscreen(true);
 
