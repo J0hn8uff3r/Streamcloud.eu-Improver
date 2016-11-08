@@ -6,7 +6,7 @@
 // @description Large amount of improvements for Streamcloud.eu
 // @include     http://*streamcloud.eu/*
 // @released	08/11/2016
-// @version     1.2.0
+// @version     1.2.1
 // @downloadURL https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @updateURL   https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 // @grant       none
