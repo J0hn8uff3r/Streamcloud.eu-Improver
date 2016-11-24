@@ -18,7 +18,7 @@ https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_
 
 A-Play/Stop video using spacebar even if you clicked outside the video frame
 
-B-Avoid default scroll down default action when spacebar is pressed
+B-Avoid scroll down default action when spacebar is pressed
 
 C-Clean unnecessary elements
 
