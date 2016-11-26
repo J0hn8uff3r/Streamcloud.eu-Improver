@@ -16,9 +16,11 @@ Greasemonkey for Mozilla Firefox: http://goo.gl/VqNcb
 2- Open the script installation url and click install:
 https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
 
+
 ************************************
 
----Improvements---
+
+**********Improvements*********
 
 A-Play/Stop video using spacebar even if you clicked outside the video frame
 
