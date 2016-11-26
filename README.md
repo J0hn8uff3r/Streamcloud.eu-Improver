@@ -5,6 +5,8 @@ Large amount of improvements for video host http://streamcloud.eu/
 ![alt tag](http://s21.postimg.org/3qmd4jyiv/Captura2.png)
 ![alt tag](https://s13.postimg.org/f06v3v5w7/Captura3.png)
 
+************Installation************
+
 1- Install the scripts manager on your browser
 
 Tampermonkey for Google Chrome: http://goo.gl/19Fxy
@@ -13,6 +15,8 @@ Greasemonkey for Mozilla Firefox: http://goo.gl/VqNcb
 
 2- Open the script installation url and click install:
 https://github.com/J0hn8uff3r/Streamcloud.eu-Improver/raw/master/Streamcloud.eu_Improver.user.js
+
+************************************
 
 ---Improvements---
 
