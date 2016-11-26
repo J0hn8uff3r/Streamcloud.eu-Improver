@@ -47,4 +47,4 @@ F-Set video controlbar below videoplayer (Feature disabled until proper fix)
 
 5-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
 
-************Options************
+
