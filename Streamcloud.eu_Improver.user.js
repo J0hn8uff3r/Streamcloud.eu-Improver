@@ -30,7 +30,7 @@ F-Set video controlbar below videoplayer
 2-Choose your desired default start volume % 
 3-Skip video to desired position at start, so you can skip a tv show intro setting start_minute and start_second (Editable from site on version 1.2.0)
 4-Choose desired lights level, within a range from 0 to 1 increasing 0.1
-5-You can choose if you want to start video normal or in fullscreen: [0]{Default} & [1]{Fullscreen}
+5-You can choose if you want to start video normal or in fullscreen: [0] {Default} & [1] {Fullscreen}
 ************Options************
 */
 var vol_gain = 10; //Option 1
